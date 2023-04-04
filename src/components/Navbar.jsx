@@ -37,7 +37,7 @@ class Navbar extends React.Component {
               </ul>
             </div>
             <div className="cta">
-              <button id="cta-btn">Hire Me</button>
+              <button id="cta-btn">Get in Touch</button>
             </div>
           </div>
         </div>
