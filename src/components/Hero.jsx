@@ -5,9 +5,13 @@ class Hero extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h1>Hero Section</h1>
-      </div>
+      <main className="hero-container">
+        <div className="hero-left">
+          <h2 className="hero-title">Khawar Mehfooz</h2>
+          <h3 className="hero-subtitle">Web Developer</h3>
+        </div>
+        <div className="hero-right"></div>
+      </main>
     );
   }
 }

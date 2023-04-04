@@ -107,6 +107,20 @@ nav {
 #cta-btn:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+/* Hero Section */
+.hero-subtitle {
+  position: relative;
+  padding-left: 5.4rem;
+}
+.hero-subtitle::before {
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: var(--accents-8);
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
 @media (width < 1200px) {
   .menu-items {
     gap: 25px;
