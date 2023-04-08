@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 :root {
-  --accents-1: hsla(198, 100%, 98%, 1);
-  --accents-2: hsla(98, 100%, 98%, 1);
+  --accents-1: #fafafa;
+  --accents-2: #eaeaea;
   --accents-3: #999;
   --accents-4: #888;
   --accents-5: #666;
@@ -23,6 +23,7 @@
   -webkit-text-size-adjust: 100%;
 }
 * {
+  /* border: 1px solid black; */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -135,6 +136,7 @@ nav {
   outline: transparent;
   cursor: ponter;
   display: none;
+  cursor: pointer;
 }
 /* Hero Section */
 .hero-section {
@@ -198,14 +200,83 @@ nav {
   font-size: 22px;
   color: var(--accents-8);
 }
+/* About Section */
+.about-section {
+  margin-top: 80px;
+}
+#about {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0 30px 150px;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 150px; */
+}
+#about-title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.article-profile {
+  height: 400px;
+  border: 1px solid var(--accents-4);
+  border-radius: 20px;
+}
+.article-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-top: 50px;
+}
+/* Experience Container */
+.experience-container {
+  display: flex;
+  /* gap: 100px; */
+  justify-content: space-around;
+}
+.experience {
+  text-align: center;
+  background-color: var(--accents-2);
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.about-details p {
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 20px;
+}
+.download-cv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  background-color: var(--accents-8);
+  outline: transparent;
+  border: 1px solid transparent;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.download-cv a {
+  font-weight: 600;
+}
+.download-cv i {
+  font-size: 18px;
+}
+.download-cv:hover {
+  cursor: pointer;
+}
+
 /* Break Points */
-@media (width < 1200px) {
+@media (width<1200px) {
   .menu-items {
     gap: 25px;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1050px) {
   /* Header */
   .logo {
     height: 3rem;
@@ -249,6 +320,16 @@ nav {
   .hero-subtitle {
     font-size: 24px;
   }
+  /* About Section */
+  .article-profile {
+    height: 350px;
+  }
+  .article-right {
+    padding-top: 0px;
+  }
+  #about-title {
+    font-size: 32px;
+  }
 }
 @media only screen and (max-width: 766px) {
   .logo {
@@ -271,5 +352,23 @@ nav {
   .hero-subtitle {
     font-size: 16px;
     width: 300px;
+  }
+  /* About */
+  #about {
+    flex-direction: column-reverse;
+  }
+  #about-title {
+    font-size: 28px;
+  }
+  .article-right {
+    margin-inline: auto;
+    width: 100%;
+  }
+  .article-left {
+    margin-top: 30px;
+    margin-inline: auto;
+  }
+  .about-details {
+    font-size: 16px;
   }
 }
