@@ -1,15 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 :root {
-  --accents-1: #fafafa;
-  --accents-2: #eaeaea;
+  --accents-1: hsla(198, 100%, 98%, 1);
+  --accents-2: hsla(98, 100%, 98%, 1);
   --accents-3: #999;
   --accents-4: #888;
   --accents-5: #666;
   --accents-6: #444;
   --accents-7: #333;
   --accents-8: #111;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  --text-gradient: linear-gradient(180deg, #555, #000);
 
   color-scheme: light dark;
   color: var(--accents-8);
@@ -24,6 +25,10 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -31,15 +36,11 @@ a {
   color: var(--accents-1);
   text-decoration: inherit;
 }
-a:hover {
-  color: var(--accents-3);
-  text-decoration: underline;
-}
 
-body {
+/* body {
   min-width: 320px;
   min-height: 100vh;
-}
+} */
 
 h1 {
   font-size: 3.2em;
@@ -78,6 +79,14 @@ nav {
 }
 .menu-item {
   font-size: 20px;
+  color: var(--accents-3);
+}
+.menu-item:hover {
+  color: var(--accents-2);
+}
+.active {
+  color: var(--accents-2);
+  text-decoration: underline;
 }
 .right {
   display: flex;
@@ -107,35 +116,160 @@ nav {
 #cta-btn:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.toggle-container {
+  display: none;
+}
+.toggle-container button {
+  /* color: white; */
+  padding: 3px 5px;
+  background: transparent;
+  outline: transparent;
+  border: 1px solid var(--accents-2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.toggle-close {
+  background: transparent;
+  border: none;
+  outline: transparent;
+  cursor: ponter;
+  display: none;
+}
 /* Hero Section */
+.hero-section {
+  padding: 150px 30px;
+  /* background-color: var(--accents-3); */
+}
+.hero-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid var(--accents-8); */
+}
+.hero-left {
+  width: 61%;
+}
+.hero-title {
+  font-size: 70px;
+  background-image: var(--text-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  margin-bottom: 0;
+}
 .hero-subtitle {
-  position: relative;
-  padding-left: 5.4rem;
+  /* line-height: 1; */
+  font-size: 22px;
+  /* max-width: 50%; */
+  font-weight: 500;
+  margin-bottom: 20px;
 }
-.hero-subtitle::before {
-  content: "";
-  width: 70px;
-  height: 1px;
+.profile-picture {
+  height: 300px;
+  border: 1px solid var(--accents-8);
+  border-radius: 100%;
+}
+.hero-btn button {
   background-color: var(--accents-8);
-  position: absolute;
-  left: 0;
-  top: 1rem;
+  outline: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
+.hero-btn button:hover {
+  cursor: pointer;
+  background-color: var(--accents-1);
+  color: var(--accents-8);
+  transition: 0.2s ease-in-out;
+  border: 1px solid var(--accents-8);
+}
+
+.icons-container {
+  margin-right: 30px;
+  display: flex;
+  gap: 15px;
+}
+.icon {
+  font-size: 22px;
+  color: var(--accents-8);
+}
+/* Break Points */
 @media (width < 1200px) {
   .menu-items {
     gap: 25px;
   }
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media only screen and (max-width: 1024px) {
+  /* Header */
+  .logo {
+    height: 3rem;
   }
-  a:hover {
-    color: #747bff;
+  .toggle-container,
+  .toggle-close {
+    display: block;
   }
-  button {
-    background-color: #f9f9f9;
+  .menu-container {
+    background-color: var(--accents-8);
+    padding: 40px 50px;
+    position: absolute;
+    top: -100%;
+    right: 0px;
+    border-radius: 0 0 0 5px;
   }
-} */
+  .show-menu-container {
+    top: 0;
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 100px 50px 10px;
+  }
+  .menu-item {
+    font-size: 16px;
+  }
+  .toggle-close {
+    position: absolute;
+    right: 40px;
+    top: 50px;
+  }
+  .cta {
+    display: none;
+  }
+  /* Hero Section */
+  .hero-title {
+    font-size: 40px;
+  }
+  .hero-subtitle {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 766px) {
+  .logo {
+    height: 2rem;
+  }
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .profile-picture {
+    height: 200px;
+  }
+  .hero-left {
+    width: auto;
+    padding-top: 20px;
+  }
+  .hero-title {
+    font-size: 32px;
+  }
+  .hero-subtitle {
+    font-size: 16px;
+    width: 300px;
+  }
+}

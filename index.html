@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="/style.css" />
+    <script defer src="/script.js"></script>
     <title>Khawar Mehfooz</title>
   </head>
   <body>
@@ -16,10 +21,13 @@
             <img class="logo" src="/assets/logo.png" alt="logo" />
           </div>
           <div class="right">
-            <div class="menu-container">
+            <div id="menu-container" class="menu-container">
+              <button id="toggle-close" class="toggle-close">
+                <i class="fa-solid fa-x"></i>
+              </button>
               <ul class="menu-items">
                 <li>
-                  <a class="menu-item" href="#"> Home </a>
+                  <a class="menu-item active" href="#"> Home </a>
                 </li>
                 <li>
                   <a class="menu-item" href="#"> About </a>
@@ -36,18 +44,35 @@
               <button id="cta-btn">Get in Touch</button>
             </div>
           </div>
+          <div class="toggle-container">
+            <button id="toggle-open"><i class="fa-solid fa-bars"></i></button>
+          </div>
         </div>
       </nav>
     </header>
     <!-- Main -->
     <main>
       <!-- Hero Section -->
-      <section>
-        <div class="hero-left">
-          <h2 class="hero-title">Khawar Mehfooz</h2>
-          <h3 class="hero-subtitle">Web Developer</h3>
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-left">
+            <h2 class="hero-title">Khawar Mehfooz</h2>
+            <p class="hero-subtitle">
+              I'm Web Developer based in Azad Kashmir, and I'm very passionate
+              and dedicated to my work.
+            </p>
+            <div class="hero-btn">
+              <button>Say Hello <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </div>
+          <div class="hero-right">
+            <img
+              class="profile-picture"
+              src="/assets/profile-picture.jpg"
+              alt="Khawar Mehfooz"
+            />
+          </div>
         </div>
-        <div class="hero-right"></div>
       </section>
     </main>
   </body>
