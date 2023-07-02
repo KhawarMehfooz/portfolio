@@ -110,11 +110,22 @@ main {
   width: fit-content;
   margin-inline: auto;
 }
-.social__link a {
+.social__link {
   background-color: var(--accent);
-  padding: 8px 25px;
-  color: var(--secondary);
+  padding: 8px 20px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.social__link i {
+  display: block;
+  color: var(--secondary);
+  font-size: 2rem;
+}
+.social__link a {
+  display: block;
+  color: var(--secondary);
 }
 .name {
   margin: 10px 0;
@@ -148,7 +159,7 @@ main {
   /* gap: 2rem; */
   grid-template-columns: 2fr 1fr;
 }
-.about {
+.article__title {
   font-size: 4.5rem;
   color: var(--accent);
 }
@@ -160,21 +171,37 @@ main {
 .about__description {
   line-height: 1.5;
   text-wrap: balance;
+  margin-bottom: 20px;
 }
-.skills {
-  margin: 15px 0;
-  display: flex;
-  gap: 1rem;
-}
-.skills__badge {
-  width: 50px;
-  /* aspect-ratio: 1; */
-  /* color: var(--accent); */
-}
+
 #about__image {
   border-radius: 1rem;
   width: 400px;
   aspect-ratio: 1;
+}
+#skills {
+  margin-top: 2rem;
+  padding: 5rem 0;
+}
+.skills__badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.skills__badge {
+  width: 150px;
+  aspect-ratio: 1;
+  border-radius: 0.8rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+.skills__badge--img {
+  width: 80px;
 }
 
 /*Media Queries  */
@@ -187,7 +214,7 @@ main {
   }
 }
 @media screen and (max-width: 800px) {
-  .about {
+  .article__title {
     font-size: 3rem;
   }
   .about__title {
@@ -196,6 +223,17 @@ main {
   }
   .about__description {
     font-size: 1.8rem;
+  }
+  /* About */
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+  #about__image {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+  .skills__badge {
+    width: 120px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -235,12 +273,7 @@ main {
   .main__cta {
     display: block;
   }
-  /* About */
-  .about__content {
-    grid-template-columns: 1fr;
-  }
-  #about__image {
-    width: 100%;
-    aspect-ratio: 1;
+  .skills__badge {
+    width: 100px;
   }
 }
