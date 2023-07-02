@@ -274,6 +274,9 @@ main {
   .main__cta {
     display: block;
   }
+  .skills__badges {
+    gap: 2rem;
+  }
   .skills__badge {
     width: 100px;
   }
