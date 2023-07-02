@@ -258,9 +258,9 @@ main {
   }
   /* Main */
   .social {
-    gap: 1rem;
+    gap: 0.8rem;
   }
-  .social__link a {
+  .social__link {
     font-size: 1.6rem;
     padding: 5px 15px;
   }
