@@ -167,6 +167,8 @@ main {
   font-size: 3rem;
   color: var(--primary);
   margin-bottom: 15px;
+  text-wrap: balance;
+
 }
 .about__description {
   line-height: 1.5;
