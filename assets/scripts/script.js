@@ -1,13 +1,15 @@
 // Show Nav Menu on small devices
-const menuContainer = document.getElementById('menu-container')
-const toggleOpen = document.getElementById('toggle-open');
+const navbarItems = document.getElementById('navbar__items');
+const toggleOpen = document.getElementById('hamburger');
 const toggleClose = document.getElementById('toggle-close');
 
-// Show Menu
 toggleOpen.addEventListener('click', () => {
-    menuContainer.classList.add('show-menu-container')
+    navbarItems.classList.add('active')
+    toggleOpen.style.display = "none";
+    toggleClose.style.display = "block"
 })
-// Hide Menu
 toggleClose.addEventListener('click', () => {
-    menuContainer.classList.remove('show-menu-container')
+    navbarItems.classList.remove('active')
+    toggleClose.style.display = "none"
+    toggleOpen.style.display = "block";
 })
