@@ -260,12 +260,13 @@ main {
   .social {
     gap: 0.8rem;
   }
-  .social__link {
+  .social__link a,
+  .social__link i {
     font-size: 1.6rem;
-    padding: 5px 15px;
   }
   .name {
     font-size: 5rem;
+    line-height: 1;
   }
   .description {
     font-size: 1.8rem;
