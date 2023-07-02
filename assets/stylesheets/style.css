@@ -235,6 +235,9 @@ main {
   .skills__badge {
     width: 120px;
   }
+  .skills__badge--img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
   .ham-menu {
