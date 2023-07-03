@@ -77,7 +77,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--text);
+  border-bottom: 2px solid var(--text);
   position: relative;
 }
 #navbar__logo {
@@ -92,9 +92,11 @@ img {
 }
 .cta {
   background-color: var(--primary);
-  padding: 15px 20px;
+  padding: 1rem 1.8rem;
   font-weight: bold;
   border-radius: 0.6rem;
+  box-shadow: 2px 2px;
+  border: 2px solid var(--text);
 }
 .cta__link {
   color: var(--secondary);
@@ -124,11 +126,17 @@ main {
 }
 .social__link {
   background-color: var(--accent);
-  padding: 8px 20px;
-  border-radius: 20px;
+  padding: 0.8rem 1.8rem;
+  border: 2px solid var(--text);
+  border-radius: 0.3rem;
+  box-shadow: 2px 2px;
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+.social__link:hover {
+  box-shadow: 4px 4px;
+  transition: 0.2s ease-in-out;
 }
 .social__link i {
   display: block;
@@ -143,8 +151,8 @@ main {
   margin: 10px 0;
   text-align: center;
   font-size: 6rem;
-  color: var(--accent);
   font-weight: 600;
+  color: var(--accent);
 }
 .description {
   text-align: center;
@@ -161,11 +169,16 @@ main {
   margin-inline: auto;
   font-weight: bold;
   display: none;
+  box-shadow: 2px 2px;
 }
 .main__cta a {
   color: var(--secondary);
 }
 /* about */
+#about {
+  margin-bottom: 10rem;
+  padding: 5rem 0;
+}
 .about__content {
   display: grid;
   /* gap: 2rem; */
@@ -193,8 +206,9 @@ main {
   width: 400px;
   aspect-ratio: 1;
 }
+/* Skills */
 #skills {
-  margin-top: 2rem;
+  margin-bottom: 10rem;
   padding: 5rem 0;
 }
 .skills__badges {
@@ -207,17 +221,27 @@ main {
 .skills__badge {
   width: 150px;
   aspect-ratio: 1;
+  border: 2px solid var(--text);
+  box-shadow: 0.3rem 0.3rem;
   border-radius: 0.8rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
   padding: 1.5rem;
   display: grid;
   place-items: center;
+}
+.skills__badge:hover {
+  box-shadow: 8px 8px;
+  transition: 0.2s ease-in-out;
 }
 .skills__badge--img {
   width: 80px;
 }
 /* Projects */
+#projects {
+  margin-bottom: 10rem;
+  padding: 5rem 0;
+}
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -225,8 +249,8 @@ main {
   margin-top: 2rem;
 }
 .project {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border: 2px solid var(--text);
+  box-shadow: 0.3rem 0.3rem;
   padding: 2rem;
   border-radius: 0.8rem;
   width: 400px;
@@ -266,8 +290,10 @@ main {
 }
 /* Testimonial */
 #testimonials {
-  margin: 4rem 0;
+  margin-bottom: 10rem;
+  padding: 5rem 0;
 }
+
 /* -------------------------------------- */
 /* Testimonial Grid Component */
 .testimonial-grid {
@@ -296,7 +322,6 @@ main {
 }
 .dark-blackish-blue-bg {
   color: var(--text);
-
 }
 
 .testimonial:nth-child(5) {
@@ -317,7 +342,7 @@ main {
   font-size: 1.8rem;
   font-weight: 600;
 }
-.author-status{
+.author-status {
   font-size: 1.6rem;
 }
 .testimonial-title {
@@ -326,17 +351,23 @@ main {
   margin: 10px 0;
 }
 /* Fiverr Btn */
-.fiverr__btn{
+.fiverr__btn {
   width: fit-content;
   margin-inline: auto;
-}
-.fiverr__btn a{
+  border: 2px solid var(--text);
   background-color: var(--accent);
+  border-radius: 0.8rem;
+  box-shadow: 2px 2px;
+}
+.fiverr__btn:hover {
+  box-shadow: 4px 4px;
+}
+.fiverr__btn a {
+  display: block;
   padding: 1rem 1.8rem;
   color: var(--secondary);
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
-
 
 @media (min-width: 50em) {
   .testimonial-grid {
@@ -369,6 +400,25 @@ main {
   }
 }
 @media screen and (max-width: 800px) {
+  .ham-menu {
+    display: block;
+  }
+  .cta {
+    display: none;
+  }
+  .navbar__items {
+    position: absolute;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    top: -9000px;
+    gap: 2em;
+    margin-inline: auto;
+    padding: 20px 0;
+  }
+  .navbar__items.active {
+    top: 90px;
+  }
   .article__title {
     font-size: 3rem;
   }
@@ -399,27 +449,15 @@ main {
   .project {
     width: 100%;
   }
+  #about,
+  #skills,
+  #projects,
+  #testimonials {
+    margin-bottom: 5rem;
+    padding: 3rem 0;
+  }
 }
 @media screen and (max-width: 600px) {
-  .ham-menu {
-    display: block;
-  }
-  .cta {
-    display: none;
-  }
-  .navbar__items {
-    position: absolute;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-    top: -9000px;
-    gap: 2em;
-    margin-inline: auto;
-    padding: 20px 0;
-  }
-  .navbar__items.active {
-    top: 90px;
-  }
   /* Main */
   .social {
     gap: 0.8rem;
@@ -443,5 +481,12 @@ main {
   }
   .skills__badge {
     width: 100px;
+  }
+  #about,
+  #skills,
+  #projects,
+  #testimonials {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
   }
 }
