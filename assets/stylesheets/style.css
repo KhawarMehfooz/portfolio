@@ -13,6 +13,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* Testimonial Grid Colors */
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --ligh-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
 }
 *,
 *::before,
@@ -241,10 +249,10 @@ main {
 .skill__tag {
   background-color: var(--accent);
   color: var(--secondary);
-  font-weight: bold;
   padding: 0.5rem 1.5rem;
   text-transform: uppercase;
   border-radius: 0.8rem;
+  font-size: 1.4rem;
 }
 .project__view {
   border-radius: 0.8rem;
@@ -256,6 +264,100 @@ main {
 .project__view a i {
   font-size: 3rem;
 }
+/* Testimonial */
+#testimonials {
+  margin: 4rem 0;
+}
+/* -------------------------------------- */
+/* Testimonial Grid Component */
+.testimonial-grid {
+  padding-block: 32px;
+  display: grid;
+  gap: 24px;
+}
+
+.testimonial {
+  border-radius: 5px;
+  padding: 32px;
+  color: white;
+  border: 2px solid var(--text);
+  box-shadow: 2px 2px;
+}
+.violet-bg {
+  background-repeat: no-repeat;
+  background-position: top right 10px;
+  color: var(--text);
+}
+.dark-grayish-blue-bg {
+  color: var(--text);
+}
+.white-bg {
+  color: var(--text);
+}
+.dark-blackish-blue-bg {
+  color: var(--text);
+
+}
+
+.testimonial:nth-child(5) {
+  color: var(--text);
+}
+
+/* Author Info */
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.author-img {
+  border-radius: 50%;
+  width: 30px;
+}
+.author-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.author-status{
+  font-size: 1.6rem;
+}
+.testimonial-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+/* Fiverr Btn */
+.fiverr__btn{
+  width: fit-content;
+  margin-inline: auto;
+}
+.fiverr__btn a{
+  background-color: var(--accent);
+  padding: 1rem 1.8rem;
+  color: var(--secondary);
+  border-radius: .8rem;
+}
+
+
+@media (min-width: 50em) {
+  .testimonial-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .col-span-2 {
+    grid-column: span 2;
+  }
+  .testimonial:last-child {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+  }
+}
+@media (max-width: 1000px) {
+  .attribution {
+    position: relative;
+  }
+}
+
+/* -------------------------------- */
 
 /*Media Queries  */
 @media screen and (max-width: 1200px) {
