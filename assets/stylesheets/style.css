@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
 :root {
   --accent: #0486b9;
   --primary: #0498d2;
@@ -33,7 +34,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Outfit", sans-serif;
 }
 p,
 span,
@@ -43,7 +45,8 @@ li,
 td,
 th,
 i {
-  font-family: "Quattrocento", serif;
+  /* font-family: "Quattrocento", serif; */
+  font-family: "Outfit", sans-serif;
   font-size: 2rem;
   text-decoration: none;
   color: var(--text);
@@ -55,6 +58,7 @@ img {
   width: 100%;
   display: block;
 }
+
 /* container */
 .container {
   margin: 0 10%;
@@ -160,15 +164,15 @@ main {
   grid-template-columns: 2fr 1fr;
 }
 .article__title {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   color: var(--accent);
+  text-transform: uppercase;
 }
 .about__title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: var(--primary);
   margin-bottom: 15px;
   text-wrap: balance;
-
 }
 .about__description {
   line-height: 1.5;
@@ -205,6 +209,53 @@ main {
 .skills__badge--img {
   width: 80px;
 }
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.project {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  width: 400px;
+}
+.project__name {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+.project__description {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  text-wrap: balance;
+}
+.skills__tags {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.skill__tag {
+  background-color: var(--accent);
+  color: var(--secondary);
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: 0.8rem;
+}
+.project__view {
+  border-radius: 0.8rem;
+  width: fit-content;
+}
+.project__view a {
+  color: var(--secondary);
+}
+.project__view a i {
+  font-size: 3rem;
+}
 
 /*Media Queries  */
 @media screen and (max-width: 1200px) {
@@ -238,6 +289,12 @@ main {
     width: 120px;
   }
   .skills__badge--img {
+    width: 100%;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .project {
     width: 100%;
   }
 }
