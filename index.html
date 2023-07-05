@@ -2,8 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Khawar Mehfooz is a talented web developer specializing in clean and modern website development. Explore his portfolio to see his latest projects and achievements."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/profile-picture.jpg"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -26,26 +36,43 @@
           </div>
           <ul class="navbar__items" id="navbar__items">
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a aria-label="About" href="#about" class="nav__link">About</a>
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
+              <a aria-label="Skills" href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#projects" class="nav__link">Projects</a>
+              <a aria-label="Projects" href="#projects" class="nav__link"
+                >Projects</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#testimonials" class="nav__link">Testimonials</a>
+              <a
+                aria-label="Testimonials"
+                href="#testimonials"
+                class="nav__link"
+                >Testimonials</a
+              >
             </li>
           </ul>
           <div class="cta">
-            <a href="mailto:khawarmehfooz@outlook.com" class="cta__link"
+            <a
+              role="button"
+              aria-label="Let's Talk"
+              href="mailto:khawarmehfooz@outlook.com"
+              class="cta__link"
               >Let's Talk</a
             >
           </div>
           <div class="ham-menu">
-            <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
-            <button id="toggle-close" class="toggle-close">
+            <button aria-label="Open Navigation Menu" id="hamburger">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <button
+              aria-label="Close Navigation Menu"
+              id="toggle-close"
+              class="toggle-close"
+            >
               <i class="fa-solid fa-x"></i>
             </button>
           </div>
@@ -58,11 +85,19 @@
         <ul class="social">
           <li class="social__link">
             <i class="fa-brands fa-linkedin"></i
-            ><a href="https://linkedin.com/in/khawarmehfooz">LinkedIn</a>
+            ><a
+              aria-label="View Khawar Mehfooz's profile on LinkedIn"
+              href="https://linkedin.com/in/khawarmehfooz"
+              >LinkedIn</a
+            >
           </li>
           <li class="social__link">
             <i class="fa-brands fa-github"></i
-            ><a href="https://github.com/Khawarmehfooz">GitHub</a>
+            ><a
+              aria-label="View Khawar Mehfooz's Profile on github"
+              href="https://github.com/Khawarmehfooz"
+              >GitHub</a
+            >
           </li>
         </ul>
         <h1 class="name">Khawar Mehfooz</h1>
@@ -71,7 +106,12 @@
           am skilled in creating interactive and visually appealing websites.
         </p>
         <div class="main__cta">
-          <a href="mailto:khawarmehfooz@outlook.com">Get In Touch</a>
+          <a
+            role="button"
+            aria-label="Get in touch"
+            href="mailto:khawarmehfooz@outlook.com"
+            >Get In Touch</a
+          >
         </div>
       </main>
     </section>
@@ -175,6 +215,8 @@
             </ul>
             <div class="project__view">
               <a
+                role="button"
+                aria-label="View my solutions to Front-End Mentor Challenges on Gihub"
                 href="https://github.com/Khawarmehfooz/Front-End-Mentor-Challenges"
                 ><i class="fa-brands fa-github"></i
               ></a>
@@ -191,7 +233,10 @@
               <li class="skill__tag">css</li>
             </ul>
             <div class="project__view">
-              <a href="https://github.com/Khawarmehfooz/HTML-CSS-Projects"
+              <a
+                role="button"
+                aria-label="View my HTML and CSS Projects on github"
+                href="https://github.com/Khawarmehfooz/HTML-CSS-Projects"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
@@ -319,7 +364,12 @@
           </article>
         </div>
         <div class="fiverr__btn">
-          <a href="https://www.fiverr.com/beingkhawar">View More on Fiverr</a>
+          <a
+            role="button"
+            aria-label="View Moew on Fiverr"
+            href="https://www.fiverr.com/beingkhawar"
+            >View More on Fiverr</a
+          >
         </div>
       </article>
     </section>
