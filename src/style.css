@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
 :root {
   --brand: #ca873a;
   --darkest: #262c30;
@@ -16,6 +16,17 @@
 body {
   background-color: var(--darkest);
 }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#app {
+  max-width: min(1400px, 95%);
+  margin-inline: auto;
+}
 h1,
 h2,
 h3,
@@ -30,6 +41,10 @@ li,
 span,
 label {
   font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+i{
+  color: var(--lightest);
 }
 a{
   text-decoration: none;
