@@ -3,6 +3,7 @@
   --brand: #ca873a;
   --darkest: #262c30;
   --dark: #44514b;
+  --light-dark:#b3afa9;
   --mid: #9eb8bf;
   --light: #f0e7dd;
   --lightest: #ffffff;
@@ -42,6 +43,10 @@ span,
 label {
   font-family: "Inter", sans-serif;
   font-size: 20px;
+}
+img,svg,picture{
+  display:block;
+  width: 100%;
 }
 i{
   color: var(--lightest);
