@@ -122,8 +122,9 @@ a:hover {
         gap: 1rem;
         top: -500px;
         width: 100%;
+        background-color: var(--darkest);
+        padding-bottom: 6rem;
     }
-
     .active {
         top: 50px;
     }
