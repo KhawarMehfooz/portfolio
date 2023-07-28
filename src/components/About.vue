@@ -61,4 +61,10 @@ export default{
         margin-bottom: 1rem;
     }  
 }
+@media only screen and (max-width:600px){
+    .about__description{
+        text-align: left;
+        font-size: 1.3rem;
+    }
+}
 </style>
