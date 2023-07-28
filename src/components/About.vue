@@ -4,8 +4,8 @@ export default{
         return{
             subheading: "Who am I?",
             heading: "I develop <span class='gradient__text article__heading'>quality, accessible</span> websites.",
-            description: "Hello, I'm Khawar Mehfooz from Kotli, Azad Kashmir, Pakistan. Currently, I am a third-year student of BS Software Engineering at the University of Kotli Azad Jammu and Kashmir.",
-            moreDescription: "I am passionate about Web Development, and since 2021, I have been working as a Freelance WordPress Developer on Fiverr. On the platform, I help clients with Website Development, Bug fixing, and Website Customization using page builders and custom scripting with HTML, CSS, JavaScript, and PHP.<br><br>My main expertise lies in Front-end development, and I have a good knowledge of HTML, CSS, and JavaScript. Additionally, I am actively learning Back-end web development with PHP. Although I'm relatively new to PHP, I have the knowledge to develop fully functional database-driven CRUD web applications.<br><br>As a web developer, I am always eager to learn and grow. I am excited to work on new and challenging projects, and I'm open to collaborating with like-minded individuals in the industry."
+            description: "Hello, I'm Khawar Mehfooz from Kotli, Azad Kashmir, Pakistan. Currently, I am a third-year student of <span class='highlight__text'>BS Software Engineering </span> at the <span class='highlight__text'>University of Kotli Azad Jammu and Kashmir.</span>",
+            moreDescription: "I am passionate about Web Development, and <span class='highlight__text'>since 2021</span>, I have been working as a <span class='highlight__text'>Freelance WordPress Developer</span> on <span class='highlight__text'>Fiverr</span>. On the platform, I help clients with Website Development, Bug fixing, and Website Customization using page builders and custom scripting with HTML, CSS, JavaScript, and PHP.<br><br>My <span class='highlight__text'>main expertise</span> lies in <span class='highlight__text'>Front-end development</span>, and I have a good knowledge of <span class='highlight__text'>HTML, CSS, and JavaScript</span>. Additionally, I am actively learning Back-end web development with PHP. Although I'm relatively new to PHP, I have the knowledge to develop fully functional database-driven CRUD web applications.<br><br>As a web developer, I am always eager to learn and grow. I am excited to work on new and challenging projects, and I'm open to collaborating with like-minded individuals in the industry."
         }
     }
 }
@@ -25,10 +25,8 @@ export default{
             <p class="about__description" v-html="moreDescription"></p>
         </article>
 </template>
-<style>
-.container{
-    padding: 6rem 4rem;
-}
+<style scoped>
+
 #about{
     display: flex;
     margin-bottom: 1.5rem;

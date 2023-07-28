@@ -4,7 +4,7 @@ export default{
         return{
             subheading: "Web Developer",
             heading: "Hi!👋I'm <span class='gradient__text'> Khawar Mehfooz</span>",
-            description: "I'm a Web developer based in Azad Kashmir, Pakistan.",
+            description: "I'm a Web developer based in  <span class='highlight__text'>Azad Kashmir, Pakistan.</span>",
             img: "/images/khawar-mehfooz.webp"
         }
     }
@@ -15,7 +15,7 @@ export default{
         <div class="hero__left">
             <h3 class="hero__left--subheading">{{ subheading }}</h3>
             <h1 class="hero__left--heading" v-html="heading"></h1>
-            <p class="hero__left--description">{{ description }}</p>
+            <p class="hero__left--description" v-html="description"></p>
             <div class="hero__left--buttons">
                 <a class="work__btn" role="button" href="#">See my work</a>
                 <a class="cta__btn" role="button" href="mailto:khawarmehfooz@oulook.com">Get in touch</a>
@@ -65,6 +65,8 @@ export default{
 }
 .work__btn{
     border: 1px solid var(--lightest);
+    font-family: 'sofia_promedium' !important;
+
 }
 .work__btn:hover{
     background-color:var(--lightest);
@@ -73,6 +75,8 @@ export default{
 .cta__btn{
     background: linear-gradient(to top, var(--brand),#eab308);
     border:1px solid transparent;
+  font-family: 'sofia_promedium' !important;
+
 }
 .cta__btn:hover{
     background-color: transparent;

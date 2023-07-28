@@ -27,7 +27,7 @@ export default {
             <h1>Khawar Mehfooz</h1>
         </div>
         <ul class="nav__items" :class="{ active: isActive }">
-            <li v-for="(link, navigation, index) in navigations" class="nav__item"><a :href="link" class="nav__link">{{
+            <li @click="toggleActive" v-for="(link, navigation, index) in navigations" class="nav__item"><a :href="link" class="nav__link">{{
                 navigation }}</a></li>
         </ul>
         <div class="cta">
