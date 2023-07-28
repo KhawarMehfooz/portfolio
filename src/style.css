@@ -193,7 +193,6 @@ h6 {
 p,
 a,
 li,
-span,
 label,
 button {
   font-family: 'sofia_proregular',sans-serif;
@@ -230,6 +229,13 @@ li{
 .highlight__text{
   color: var(--brand);
 }
+.gradient__text{
+    font-size: 3rem;
+    background-image: linear-gradient(to top, var(--brand),#eab308);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 @media only screen and (max-width:766px){
   .article__subheading{
     margin-bottom: 0;
@@ -243,6 +249,12 @@ li{
     font-size: 2rem;
   }
   p{
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+  .hero__left--heading .gradient__text{
+    font-size: 2.5rem;
+  }
+  .hero__left--heading span{
+    display: block;
   }
 }

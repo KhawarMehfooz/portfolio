@@ -3,7 +3,7 @@ export default{
     data(){
         return{
             subheading: "Web Developer",
-            heading: "Hi!👋I'm Khawar Mehfooz",
+            heading: "Hi!👋I'm <span class='gradient__text'> Khawar Mehfooz</span>",
             description: "I'm a Web developer based in Azad Kashmir, Pakistan.",
             img: "/images/khawar-mehfooz.webp"
         }
@@ -14,7 +14,7 @@ export default{
     <main class="hero">
         <div class="hero__left">
             <h3 class="hero__left--subheading">{{ subheading }}</h3>
-            <h1 class="hero__left--heading">{{ heading }}</h1>
+            <h1 class="hero__left--heading" v-html="heading"></h1>
             <p class="hero__left--description">{{ description }}</p>
             <div class="hero__left--buttons">
                 <a class="work__btn" role="button" href="#">See my work</a>
@@ -45,9 +45,12 @@ export default{
     color: var(--lightest);
     line-height: 1.3;
 }
+
 .hero__left--description{
     color: var(--mid);
+    font-size: 1.8rem;
     margin-bottom: 2rem;
+    text-wrap:balance;
 }
 .hero__left--buttons{
     display: flex;
@@ -68,11 +71,10 @@ export default{
     color: var(--darkest);
 }
 .cta__btn{
-    background-color: var(--brand);
-    border:1px solid transparent;;
+    background: linear-gradient(to top, var(--brand),#eab308);
+    border:1px solid transparent;
 }
 .cta__btn:hover{
-    color: var(--brand);
     background-color: transparent;
     border: 1px solid var(--brand);
 }
@@ -114,7 +116,8 @@ export default{
         
     }
     .hero__left--description{
-        font-size: 1rem;
+        font-size: 1.3rem !important;
+
     }
     .hero__left--buttons{
         justify-content: center;
@@ -123,5 +126,4 @@ export default{
         font-size: 18px;
     }
 }
-
 </style>

@@ -52,7 +52,10 @@ body {
     position: relative;
 }
 .brand h1{
-    color: var(--brand);
+    background-image: linear-gradient(to top, var(--brand),#eab308);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
     font-size: 2.2rem;
 }
 
@@ -80,7 +83,7 @@ a {
     text-decoration: none;
 }
 .cta a{
-    background-color: var(--brand);
+    background: linear-gradient(to top, var(--brand),#eab308);
     padding: 8px 20px;
     border-radius: 6px;
 }
