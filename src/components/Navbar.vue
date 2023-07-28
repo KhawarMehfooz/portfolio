@@ -36,7 +36,7 @@ export default {
         <div class="nav__toggle">
             <button @click="toggleActive" class="toggle__buttons" :class="{ hide: isHidden }" aria-label="open navigation"
                 id="open__nav">
-                <i class="fas fa-bars fa-xl"></i>
+                <i class="fas fa-bars fa-lg"></i>
             </button>
             <button @click="toggleActive" class="toggle__buttons" :class="{ hide: !isHidden }" aria-label="open navigation"
                 id="close__nav">
@@ -147,7 +147,7 @@ a:hover {
 }
 @media only screen and (max-width:600px){
     .brand h1{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 }
 </style>
