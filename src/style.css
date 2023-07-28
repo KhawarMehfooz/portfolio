@@ -62,6 +62,7 @@ li{
 .article__subheading{
   line-height: 1.6;
   margin-bottom: 8px;
+  text-transform: uppercase;
   color: var(--light-dark);
 }
 .article__heading{
