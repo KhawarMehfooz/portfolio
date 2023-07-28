@@ -3,10 +3,10 @@ export default {
     data() {
         return {
             navigations: {
-                "About": "#",
-                "Skills": "#",
-                "Projects": "#",
-                "Testimonials": "#",
+                "About": "#about",
+                "Skills": "#skills",
+                "Projects": "#projects",
+                "Testimonials": "#testimonials",
             },
             isActive: false,
             isHidden: false
@@ -40,7 +40,7 @@ export default {
             </button>
             <button @click="toggleActive" class="toggle__buttons" :class="{ hide: !isHidden }" aria-label="open navigation"
                 id="close__nav">
-                <i class="fas fa-x fa-xl"></i>
+                <i class="fas fa-x fa-lg"></i>
             </button>
         </div>
 
