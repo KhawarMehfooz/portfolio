@@ -58,3 +58,34 @@ a{
 li{
   list-style: none;
 }
+/* Article Styling */
+.article__subheading{
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: var(--light-dark);
+}
+.article__heading{
+  width: 100%;
+  font-size: 3rem;
+  color: var(--lightest);
+  text-wrap:balance;
+}
+.highlight__text{
+  color: var(--brand);
+}
+@media only screen and (max-width:766px){
+  .article__subheading{
+    margin-bottom: 0;
+  }
+  .article__heading{
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width:600px){
+  .article__heading{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+}
