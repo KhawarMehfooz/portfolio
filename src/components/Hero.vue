@@ -1,16 +1,28 @@
+<script>
+export default{
+    data(){
+        return{
+            subheading: "Web Developer",
+            heading: "Hi!👋I'm Khawar Mehfooz",
+            description: "I'm a Web developer based in Azad Kashmir, Pakistan.",
+            img: "/images/khawar-mehfooz.webp"
+        }
+    }
+}
+</script>
 <template>
     <main class="hero">
         <div class="hero__left">
-            <h3 class="hero__left--subheading">Web Developer</h3>
-            <h1 class="hero__left--heading">Hi!👋I'm Khawar Mehfooz</h1>
-            <p class="hero__left--description">I'm a Web developer based in Azad Kashmir, Pakistan.</p>
+            <h3 class="hero__left--subheading">{{ subheading }}</h3>
+            <h1 class="hero__left--heading">{{ heading }}</h1>
+            <p class="hero__left--description">{{ description }}</p>
             <div class="hero__left--buttons">
                 <a class="work__btn" role="button" href="#">See my work</a>
                 <a class="cta__btn" role="button" href="mailto:khawarmehfooz@oulook.com">Get in touch</a>
             </div>
         </div>
         <div class="hero__right">
-            <img src="/public/images/khawar-mehfooz.webp" alt="">
+            <img :src="img" alt="">
         </div>
 
     </main>
