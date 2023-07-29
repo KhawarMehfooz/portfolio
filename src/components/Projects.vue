@@ -91,27 +91,26 @@ export default{
 <style scoped>
 .projects__list{
     margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
 }
 
 .project__card{
     width: 19.5rem;
+    background-color: var(--dark-2);
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .project__img{
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
+    opacity: 0.8;
     width: 100%;
     aspect-ratio: 16/9;
 }
 .project__details{
     padding: 1.25rem;
-}
-.project__name{
-
 }
 .project__description{
     font-size: 1rem;
@@ -125,7 +124,7 @@ export default{
 }
 .tag{
     font-family: 'sofia_promedium';
-    font-size: .8rem;
+    font-size: .9rem;
     padding: .25rem .5rem .375rem;
     border-radius: .375rem;
     line-height: 1rem;
@@ -139,6 +138,25 @@ export default{
 #javascript{
     background-color: var(--js-clr);
     color: var(--darkest);
+}
+@media only screen and (max-width:1024px){
+    .projects__list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+
+    }
+}
+@media  only screen and (max-width:768px) {
+    .projects__list{
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+    }
+    
+}
+@media only screen and (max-width:600px){
+    .projects__list{
+        justify-content: center;
+    }
 }
 
 </style>

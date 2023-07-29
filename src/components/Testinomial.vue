@@ -176,20 +176,26 @@
 .fiverr__btn {
     width: fit-content;
     margin-inline: auto;
-    background: linear-gradient(to top, var(--brand),#eab308);
-
-    border-radius: 0.5rem;
+    background-color: var(--brand);
+    /* background: linear-gradient(to top, var(--brand),#eab308); */
+    border: 2px solid transparent;
+    border-radius: 0.2rem;
 }
 
 .fiverr__btn:hover {
-    scale: 1.05;
+    border-color: var(--brand);
+    background-color: transparent;
 }
+
 
 .fiverr__btn a {
     display: block;
-    padding: .8rem 1rem;
+    padding: .7rem;
     color: var(--dark-2);
-    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+.fiverr__btn:hover a{
+  color: var(--brand);
 }
 
 @media (min-width: 50em) {
