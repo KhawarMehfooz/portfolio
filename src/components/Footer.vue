@@ -1,7 +1,7 @@
 
 <template>
     <footer class="container">
-      <p>Made with <i style="color: red">❤</i>  in Beautiful Azad Kashmir</p>
+      <p>Made with <i style="color: red">❤</i> in Beautiful Azad Kashmir</p>
     </footer>
 </template>
 

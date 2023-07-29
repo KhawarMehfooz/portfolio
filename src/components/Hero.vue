@@ -17,7 +17,7 @@ export default{
             <h1 class="hero__left--heading" v-html="heading"></h1>
             <p class="hero__left--description" v-html="description"></p>
             <div class="hero__left--buttons">
-                <a class="work__btn" role="button" href="#">See my work</a>
+                <a class="work__btn" role="button" href="#projects">See my work</a>
                 <a class="cta__btn" role="button" href="mailto:khawarmehfooz@oulook.com">Get in touch</a>
             </div>
         </div>
@@ -73,14 +73,16 @@ export default{
     color: var(--darkest);
 }
 .cta__btn{
-    background: linear-gradient(to top, var(--brand),#eab308);
-    border:1px solid transparent;
-  font-family: 'sofia_promedium' !important;
+    background-color: var(--brand);
+    border:2px solid transparent;
+    font-family: 'sofia_promedium' !important;
+    color: var(--darkest);
 
 }
 .cta__btn:hover{
-    background-color: transparent;
-    border: 1px solid var(--brand);
+    background: transparent;
+    border: 2px solid var(--brand);
+    color: var(--brand);
 }
 
 .hero__right img{
