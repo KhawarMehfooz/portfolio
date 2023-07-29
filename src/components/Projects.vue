@@ -5,7 +5,7 @@ export default{
             projects: [
                 {
                     name: "Tip Calculator App",
-                    description: "lorem inpusm jel jelo jel jesah hes",
+                    description: "A tip calculator app challenge by front-end mentor.",
                     img: "/images/tip-calculator-app.png",
                     liveLink: "https://tip-calculator-app-by-khawar.vercel.app/",
                     githubLink: "https://github.com/Khawarmehfooz/Front-End-Mentor-Challenges/tree/main/tip-calculator-app",
@@ -24,7 +24,7 @@ export default{
                     ]
                 }, {
                     name: "Advice Generator App",
-                    description: "lorem inpusm jel jelo jel jesah hes",
+                    description: "A advice generator app challenge by front-end mentor.",
                     img: "/images/advice-generator-app.png",
                     liveLink: "https://advice-generator-app-by-khawar.vercel.app/",
                     githubLink: "https://github.com/Khawarmehfooz/advice-generator-app",
@@ -43,7 +43,7 @@ export default{
                     ]
                 }, {
                     name: "Age Calculator App",
-                    description: "lorem inpusm jel jelo jel jesah hes",
+                    description: "An age calculator app challenge by front-end mentor.",
                     img: "/images/age-calculator-app.png",
                     liveLink: "https://age-calculator-app-by-khawar.vercel.app/",
                     githubLink: "https://github.com/Khawarmehfooz/Front-End-Mentor-Challenges/tree/main/age-calculator-app",
