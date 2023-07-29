@@ -4,6 +4,7 @@ import Hero from './components/Hero.vue';
 import About from './components/About.vue';
 import Skills from './components/Skills.vue';
 import Projects from './components/Projects.vue'
+import Testinomial from './components/Testinomial.vue';
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import Projects from './components/Projects.vue'
   <About />
   <Skills/>
   <Projects/>
+  <Testinomial/>
 
 </template>
 
