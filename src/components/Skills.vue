@@ -78,9 +78,7 @@ export default {
 }
 @media only screen and (max-width:600px){
     .skills__container{
-        /* justify-content: center; */
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
     }
 
 }
