@@ -180,7 +180,7 @@
 /* Styling */
 html{
   scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
+  /* scroll-padding-top: 4rem; */
 }
 body {
   background-color: var(--darkest);
@@ -227,7 +227,7 @@ li{
   list-style: none;
 }
 .container{
-    padding: 6rem 4rem;
+    padding: 6rem 4rem 0 4rem;
 }
 /* Article Styling */
 .article__subheading{
@@ -258,7 +258,7 @@ li{
 }
 @media only screen and (max-width:850px){
     .container{
-        padding: 3rem 1rem;
+        padding: 3rem 1rem 0 1rem;
     }
 }
 @media only screen and (max-width:766px){
