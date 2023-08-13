@@ -61,6 +61,29 @@ export default{
                         }
                     ]
                 }
+                , {
+                    name: "Blogging Web Application",
+                    description: "A Simple blogging Web application built using PHP.",
+                    img: "/images/blog.png",
+                    liveLink: "https://github.com/Khawarmehfooz/blog",
+                    githubLink: "https://github.com/Khawarmehfooz/blog",
+                    tags: [
+                        {
+                            id: 'html',
+                            name: 'html'
+                        },
+                        {
+                            id: 'css',
+                            name: 'css'
+                        }, {
+                            id: 'javascript',
+                            name: "javascript"
+                        }, {
+                            id: 'php',
+                            name: "php"
+                        }
+                    ]
+                }
             ]
         }
     }
@@ -93,7 +116,7 @@ export default{
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 1rem;
+    gap: 2rem 1rem;
 }
 
 .project__card{
@@ -138,6 +161,9 @@ export default{
 #javascript{
     background-color: var(--js-clr);
     color: var(--darkest);
+}
+#php{
+    background-color: var(--php-clr);
 }
 @media only screen and (max-width:1024px){
     .projects__list{
