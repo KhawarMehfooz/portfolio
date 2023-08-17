@@ -120,16 +120,18 @@ a:hover {
         display: none;
     }
     .nav__items {
-        position: absolute;
+        position: fixed;
         flex-direction: column;
         gap: 1rem;
-        top: -500px;
-        width: 100%;
+        height: 100%;
+        inset: 0 0 0 20%;
         background-color: var(--darkest);
-        padding-bottom: 6rem;
+        padding: min(20rem, 15vh) 2rem;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
     }
     .active {
-        top: 50px;
+        transform: translateX(0%);
     }
 
     .nav__toggle {
@@ -139,10 +141,21 @@ a:hover {
     #open__nav {
         display: block;
         margin-left: 1rem;
+        position: absolute;
+        z-index: 2000;
+        right: 1rem;
+        top: .1rem;
+
     }
 
     #close__nav {
         display: block;
+        position: absolute;
+        z-index: 2000;
+        right: 1rem;
+        top: .1rem;
+
+
     }
 }
 @media only screen and (max-width:600px){
