@@ -33,19 +33,18 @@
               <div class="author-photo">
                 <img
                   class="author-img"
-                  src="/images/yohan.webp"
+                  src="/images/j.png"
                   alt="Yohan Profile Image"
                 />
               </div>
               <div class="author-details">
-                <p class="author-name">Yohan</p>
-                <p class="author-status">Switzerland</p>
+                <p class="author-name">Joseph</p>
+                <p class="author-status">Philippines</p>
               </div>
             </div>
             <div class="testimonial-content">
               <p class="testimonial-title">
-                “Good work. He explained the process well and gave me explanations
-                to problems I encountered.”
+                “khawar is very much flexible and helpful. he also knows what he is doing and we look forward on having more projects with him.”
               </p>
             </div>
           </article>
@@ -76,19 +75,18 @@
               <div class="author-photo">
                 <img
                   class="author-img"
-                  src="/images/j.png"
+                  src="/images/a.png"
                   alt="Profile Image"
                 />
               </div>
               <div class="author-details">
-                <p class="author-name">Joseph</p>
-                <p class="author-status">Philippines</p>
+                <p class="author-name">Anders Sundström</p>
+                <p class="author-status">Swedan</p>
               </div>
             </div>
             <div class="testimonial-content">
               <p class="testimonial-title">
-                “khawar is very much flexible and helpful. he also knows what he is
-                doing and we look forward on having more projects with him.”
+                "Highly recommended to boost function, design elements and widgets, anything out of the ordinary. Customization and modification to really create unique features. Easy to work with, respectable and proactive"
               </p>
             </div>
           </article>
