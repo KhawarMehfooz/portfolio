@@ -121,7 +121,7 @@ export default{
 
 .project__card{
     width: 19.5rem;
-    background-color: var(--dark-2);
+    background-color: var(--darkest);
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
