@@ -182,6 +182,9 @@ export default{
 #php{
     background-color: var(--php-clr);
 }
+#vue{
+    background-color: var(--vue-clr);
+}
 @media only screen and (max-width:1024px){
     .projects__list{
         grid-template-columns: repeat(2,1fr);
