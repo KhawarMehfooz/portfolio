@@ -16,10 +16,6 @@ export default {
                     img: "/images/js.png"
                 },
                 {
-                    name: "vue.js",
-                    img: "/images/vuejs.png"
-                },
-                {
                     name: "php",
                     img: "/images/php.png",
                     id:"php"
@@ -48,7 +44,7 @@ export default {
             Skills
         </div>
         <div class="skills__container">
-            <div class="skill__card" v-for="skill in skills">
+            <div :title="skill.name" class="skill__card" v-for="skill in skills">
                 <img :id="skill.id" class="skill__card__img" :src="skill.img" :alt="skill.name">
             </div>
         </div>
@@ -75,6 +71,7 @@ export default {
     border-bottom: 4px solid var(--brand);
     border-radius: 8px;
     margin: 0 .5rem 1rem 0.5rem;
+    cursor: pointer;
 }
 @media only screen and (max-width:600px){
     .skills__container{
