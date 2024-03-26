@@ -83,6 +83,23 @@ export default{
                             name: "php"
                         }
                     ]
+                },{
+                    name: "Expense Tracker",
+                    description: "An expense tracker web application using vue.js.",
+                    img: "/images/expense-tracker.png",
+                    liveLink: "https://expense-tracker-vue.vercel.app/",
+                    tags: [
+                        {
+                            id: 'html',
+                            name: 'html'
+                        },{
+                            id: 'css',
+                            name: 'css'
+                        },{
+                            id: 'vue',
+                            name: 'vue.js'
+                        }
+                    ]
                 }
             ]
         }
@@ -164,6 +181,9 @@ export default{
 }
 #php{
     background-color: var(--php-clr);
+}
+#vue{
+    background-color: var(--vue-clr);
 }
 @media only screen and (max-width:1024px){
     .projects__list{
