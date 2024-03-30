@@ -77,7 +77,7 @@
             </div>
           </article>
         </div>
-        <div class="px-3 md:w-1/3">
+        <div class="md:w-1/3">
           <article
             class="w-full mx-auto rounded bg-white border border-gray-900 p-5 text-gray-800 font-light mb-6"
           >
@@ -146,7 +146,7 @@
             </div>
           </article>
         </div>
-        <div class="px-3 md:w-1/3">
+        <div class="md:w-1/3">
           <article
             class="w-full mx-auto rounded bg-white border border-gray-900 p-5 text-gray-800 font-light mb-6"
           >

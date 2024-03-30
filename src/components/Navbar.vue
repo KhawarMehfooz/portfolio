@@ -8,7 +8,7 @@ const navigation = [
   {
     name: "Testimonials",
     link: "#testimonials",
-    icon: "/images/testimonial.png"
+    icon: "/images/testimonial.png",
   },
   {
     name: "Contact",
@@ -37,7 +37,7 @@ const logoImageUrl = "/images/khawar-mehfooz.webp";
         />
       </a>
       <nav
-        class="w-full md:w-auto md:ml-auto flex flex-wrap items-center font-normal text-base text-gray-900 justify-around space-x-0 md:space-x-4 lg:justify-center"
+        class="w-full md:w-auto md:ml-auto flex flex-wrap items-center justify-center gap-4 md:gap-0 font-normal text-base text-gray-900 space-x-0 md:space-x-4"
       >
         <a
           v-for="(navigation, index) in navigation"
