@@ -69,7 +69,7 @@ const projects = [
 </script>
 
 <template>
-  <section class="py-4 lg:py-16 my-4 lg:my-16 border-y-2 border-gray-800">
+  <section class="pt-4 pb-8 lg:pb-16 border-y-2 border-gray-800">
     <div id="projects" class="px-4 md:px-2">
       <h2
         class="text-2xl lg:text-3xl lg:leading-relaxed font-semibold leading-snug text-gray-900"

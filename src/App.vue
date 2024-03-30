@@ -13,6 +13,7 @@ import Footer from "./components/Footer.vue";
     <Navbar />
     <Hero />
     <Projects />
+    <Testinomial />
   </div>
 </template>
 

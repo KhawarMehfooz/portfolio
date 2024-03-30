@@ -6,6 +6,11 @@ const navigation = [
     icon: "/images/code.png",
   },
   {
+    name: "Testimonials",
+    link: "#testimonials",
+    icon: "/images/testimonial.png"
+  },
+  {
     name: "Contact",
     link: "mailto:bilawalmehfooz@outlook.com",
     icon: "/images/envelope.png",

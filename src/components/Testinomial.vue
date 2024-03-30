@@ -1,228 +1,240 @@
 <template>
-    <!-- Testomonial -->
-    <section class="container">
-      <article id="testimonials">
-        <h2 class="article__heading">Testimonials</h2>
-        <div class="testimonial-grid">
-          <article class="testimonial col-span-2">
-            <div class="author-info">
-              <div class="author-photo">
-                <img
-                  class="author-img"
-                  src="/images/jasonnorman.webp"
-                  alt="Profile Image"
-                />
-              </div>
-              <div class="author-details">
-                <p class="author-name">Jason Norman</p>
-                <p class="author-status">United Kingdom</p>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <p class="testimonial-title">
-                “Khawa IS one of the first people on Fiverr to provide fluid
-                typography, he is really helpful, extremely efficient and knows what
-                he is talking about. He went above and beyond to help me with my
-                website. Professional with good communication skills I highly
-                recommend Khawa! thank you !!!”
-              </p>
-            </div>
-          </article>
-          <article class="testimonial">
-            <div class="author-info">
-              <div class="author-photo">
-                <img
-                  class="author-img"
-                  src="/images/j.png"
-                  alt="Yohan Profile Image"
-                />
-              </div>
-              <div class="author-details">
-                <p class="author-name">Joseph</p>
-                <p class="author-status">Philippines</p>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <p class="testimonial-title">
-                “khawar is very much flexible and helpful. he also knows what he is doing and we look forward on having more projects with him.”
-              </p>
-            </div>
-          </article>
-          <article class="testimonial">
-            <div class="author-info">
-              <div class="author-photo">
-                <img
-                  class="author-img"
-                  src="/images/S.png"
-                  alt="Profile Image"
-                />
-              </div>
-              <div class="author-details">
-                <p class="author-name">Saurab</p>
-                <p class="author-status">Australia</p>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <p class="testimonial-title">
-                “Khawar did a great job identifying the problem I was facing. He was
-                quick in his response and delivered the work before time. Highly
-                recommended.”
-              </p>
-            </div>
-          </article>
-          <article class="testimonial col-span-2">
-            <div class="author-info">
-              <div class="author-photo">
-                <img
-                  class="author-img"
-                  src="/images/a.png"
-                  alt="Profile Image"
-                />
-              </div>
-              <div class="author-details">
-                <p class="author-name">Anders Sundström</p>
-                <p class="author-status">Swedan</p>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <p class="testimonial-title">
-                "Highly recommended to boost function, design elements and widgets, anything out of the ordinary. Customization and modification to really create unique features. Easy to work with, respectable and proactive"
-              </p>
-            </div>
-          </article>
-          <article class="testimonial">
-            <div class="author-info">
-              <div class="author-photo">
-                <img
-                  class="author-img"
-                  src="/images/M.png"
-                  alt="Jason's Profile Image"
-                />
-              </div>
-              <div class="author-details">
-                <p class="author-name">Mark Bedella</p>
-                <p class="author-status">United States</p>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <p class="testimonial-title">
-                “Blown away by his original designs. I communicated expectations and
-                Khawar put his creativity to work. He provided several drafts and
-                asked me to choose. Khawar is a professional and designed according
-                to his imagination and my expectations. I appreciate that. I had
-                zero problems with communication and overall I am extremely pleased
-                and highly recommend.”
-              </p>
-            </div>
-          </article>
-        </div>
-        <div class="fiverr__btn">
-          <a
-            role="button"
-            aria-label="View Moew on Fiverr"
-            href="https://www.fiverr.com/beingkhawar">View More on Fiverr</a
+  <section class="pt-4 pb-8 lg:pb-16 border-b-2 border-gray-800">
+    <div id="testimonials" class="px-4 md:px-2">
+      <h2
+        class="text-2xl lg:text-3xl lg:leading-relaxed font-semibold leading-snug text-gray-900"
+      >
+        Testimonials
+      </h2>
+      <div class="md:flex items-start mt-4">
+        <div class="md:w-1/3 mx-auto">
+          <article
+            class="w-full mx-auto rounded bg-white border border-gray-900 p-5 text-gray-800 font-light mb-6"
           >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="/images/jasonnorman.webp" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Jason Norman.
+                </h6>
+                <div class="flex items-center gap-2">
+                  <img class="w-5" src="/images/uk.png" alt="" />
+                  <span class="text-sm text-zinc-500">United Kingdom</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Khawa IS one of the first people on Fiverr to provide fluid
+                typography, he is really helpful, extremely efficient and knows
+                what he is talking about. He went above and beyond to help me
+                with my website. Professional with good communication skills I
+                highly recommend Khawa! thank you !!!<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </article>
+          <article
+            class="w-full mx-auto rounded bg-white border border-gray-900 p-5 text-gray-800 font-light mb-6"
+          >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="/images/j.png" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Saurab.
+                </h6>
+                <div class="flex items-center gap-2">
+                  <img class="w-5" src="/images/australia.png" alt="" />
+                  <span class="text-sm text-zinc-500">Australia</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Khawar did a great job identifying the problem I was facing. He
+                was quick in his response and delivered the work before time.
+                Highly recommended.<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </article>
         </div>
-      </article>
-    </section>
+        <div class="px-3 md:w-1/3">
+          <article
+            class="w-full mx-auto rounded bg-white border border-gray-900 p-5 text-gray-800 font-light mb-6"
+          >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="/images/j.png" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Joseph
+                </h6>
+                <div class="flex items-center gap-2">
+                  <img class="w-5" src="/images/philippines.png" alt="" />
+                  <span class="text-sm text-zinc-500">Philippines</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >khawar is very much flexible and helpful. he also knows what he
+                is doing and we look forward on having more projects with
+                him.<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </article>
+          <article
+            class="w-full mx-auto rounded bg-white border border-gray-900 p-5 text-gray-800 font-light mb-6"
+          >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="/images/a.png" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Anders Sundström
+                </h6>
+                <div class="flex items-center gap-2">
+                  <img class="w-5" src="/images/swedan.png" alt="" />
+                  <span class="text-sm text-zinc-500">Swedan</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Highly recommended to boost function, design elements and
+                widgets, anything out of the ordinary. Customization and
+                modification to really create unique features. Easy to work
+                with, respectable and proactive.<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="px-3 md:w-1/3">
+          <article
+            class="w-full mx-auto rounded bg-white border border-gray-900 p-5 text-gray-800 font-light mb-6"
+          >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="/images/M.png" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">
+                  Mark Bedella.
+                </h6>
+                <div class="flex items-center gap-2">
+                  <img class="w-5" src="/images/us.png" alt="" />
+                  <span class="text-sm text-zinc-500">United States</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Blown away by his original designs. I communicated expectations
+                and Khawar put his creativity to work. He provided several
+                drafts and asked me to choose. Khawar is a professional and
+                designed according to his imagination and my expectations. I
+                appreciate that. I had zero problems with communication and
+                overall I am extremely pleased and highly recommend.<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </article>
+          <article
+            class="w-full mx-auto rounded bg-white border border-gray-900 p-5 text-gray-800 font-light mb-6"
+          >
+            <div class="w-full flex mb-4 items-center">
+              <div
+                class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200"
+              >
+                <img src="/images/yohan.webp" alt="" />
+              </div>
+              <div class="flex-grow pl-3">
+                <h6 class="font-bold text-sm uppercase text-gray-600">Yohan</h6>
+                <div class="flex items-center gap-2">
+                  <img class="w-5" src="/images/switzerland.png" alt="" />
+                  <span class="text-sm text-zinc-500">Switzerland</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full">
+              <p class="text-sm leading-tight">
+                <span
+                  class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                  >"</span
+                >Good work. He explained the process well and gave me
+                explanations to problems I encountered.<span
+                  class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                  >"</span
+                >
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="w-full">
+        <a
+          role="button"
+          class="fiverr__btn block w-fit mx-auto py-1.5 px-3 md:px-4 rounded-sm border-2 border-gray-800"
+          href="https://fiverr.com/beingkhawar"
+          rel="noreferrer"
+          >View More on Fiverr</a
+        >
+      </div>
+    </div>
+  </section>
 </template>
 <style scoped>
-.testimonial-grid {
-    padding-block: 32px;
-    display: grid;
-    gap: 24px;
-}
-
-.testimonial {
-    border-radius: 5px;
-    padding: 32px;
-    color: white;
-    border-top: 4px solid var(--brand);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-/* Author Info */
-.author-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.author-img {
-    border-radius: 50%;
-    width: 30px;
-}
-
-.author-name {
-    font-size: 1rem;
-    color:var(--light-dark);
-}
-
-.author-status {
-    font-size: 1rem;
-    color:var(--light-dark);
-
-}
-
-.testimonial-title {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: var(--light);
-}
-
-/* Fiverr Btn */
+article,
 .fiverr__btn {
-    width: fit-content;
-    margin-inline: auto;
-    background-color: var(--brand);
-    /* background: linear-gradient(to top, var(--brand),#eab308); */
-    border: 2px solid transparent;
-    border-radius: 0.2rem;
+  box-shadow: 2px 2px black !important;
+}
+article:hover, .fiverr__btn:hover{
+  box-shadow: 3px 3px black !important;
+  transition: .2ms ease-in;
 }
 
-.fiverr__btn:hover {
-    border-color: var(--brand);
-    background-color: transparent;
-}
-
-
-.fiverr__btn a {
-    display: block;
-    padding: .7rem;
-    color: var(--dark-2);
-    font-size: 1.2rem;
-}
-.fiverr__btn:hover a{
-  color: var(--brand);
-}
-
-@media (min-width: 50em) {
-    .testimonial-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .col-span-2 {
-        grid-column: span 2;
-    }
-
-    .testimonial:last-child {
-        grid-column-start: 4;
-        grid-row-start: 1;
-        grid-row-end: span 2;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    #testimonials {
-        margin-bottom: 5rem;
-        padding: 3rem 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #testimonials {
-        margin-bottom: 2rem;
-        padding: 1rem 0;
-    }
-}
 </style>
