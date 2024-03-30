@@ -1,166 +1,67 @@
-<script>
-export default {
-    data() {
-        return {
-            navigations: {
-                "About": "#about",
-                "Skills": "#skills",
-                "Projects": "#projects",
-                "Testimonials": "#testimonials",
-            },
-            isActive: false,
-            isHidden: false
-        }
-    },
-    methods: {
-        // Toggle Navigation Menu on Mobile
-        toggleActive() {
-            this.isActive = !this.isActive
-            this.isHidden = !this.isHidden
-        }
-    }
-}
+<script setup>
+const navigation = [
+  {
+    name: "Projects",
+    link: "#projects",
+    icon: "/images/code.png",
+  },
+  {
+    name: "Testimonials",
+    link: "#testimonials",
+    icon: "/images/testimonial.png",
+  },
+  {
+    name: "Contact",
+    link: "mailto:khawarmehfooz@outlook.com",
+    icon: "/images/envelope.png",
+    cta: true,
+  },
+];
+const logoImageUrl = "/images/khawar-mehfooz.webp";
 </script>
 <template>
-    <nav role="navigation">
-        <div class="brand">
-            <h1>Khawar Mehfooz</h1>
-        </div>
-        <ul class="nav__items" :class="{ active: isActive }">
-            <li @click="toggleActive" v-for="(link, navigation, index) in navigations" class="nav__item"><a :href="link" class="nav__link">{{
-                navigation }}</a></li>
-        </ul>
-        <div class="cta">
-            <a href="mailto:khawarmehfooz@outlook.com">Hire Me</a>
-        </div>
-        <div class="nav__toggle">
-            <button @click="toggleActive" class="toggle__buttons" :class="{ hide: isHidden }" aria-label="open navigation"
-                id="open__nav">
-                <i class="fas fa-bars fa-lg"></i>
-            </button>
-            <button @click="toggleActive" class="toggle__buttons" :class="{ hide: !isHidden }" aria-label="open navigation"
-                id="close__nav">
-                <i class="fas fa-x fa-lg"></i>
-            </button>
-        </div>
-
-    </nav>
+  <header class="border-b-2 border-gray-800">
+    <div
+      class="container mx-auto px-3 md:px-0 flex flex-wrap py-4 flex-col md:flex-row items-center"
+    >
+      <a
+        href="/"
+        id="link-home"
+        class="flex title-font font-semibold items-center text-gray-900 mb-4 md:mb-0 hover:opacity-75 transition-opacity duration-200"
+      >
+        <img
+          :src="logoImageUrl"
+          alt="Khawar mehfooz profile picture"
+          class="w-16 h-16 rounded-full"
+          loading="lazy"
+        />
+      </a>
+      <nav
+        class="w-full md:w-auto md:ml-auto flex flex-wrap items-center justify-center gap-4 md:gap-0 font-normal text-base text-gray-900 space-x-0 md:space-x-4"
+      >
+        <a
+          v-for="(navigation, index) in navigation"
+          :href="navigation.link"
+          :key="index"
+          :class="{ cta__button: navigation.cta }"
+          class="nav__item flex items-center gap-2 py-1.5 px-3 md:px-4 rounded-sm border-2 border-gray-800 shadow-none"
+        >
+          <img class="w-5" :src="navigation.icon" alt="" loading="lazy" />
+          {{ navigation.name }}</a
+        >
+      </nav>
+    </div>
+  </header>
 </template>
-
 <style scoped>
-body {
-    position: relative;
+.nav__item {
+  box-shadow: 3px 3px;
 }
-.brand h1{
-    background-image: linear-gradient(to top, var(--brand),#eab308);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    font-size: 2.2rem;
+.nav__item:hover {
+  box-shadow: 4px 4px;
+  transition: 0.3s ease-in-out;
 }
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2rem 0;
-    position: relative;
-}
-
-.nav__items {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    color: var(--lightest);
-    font-weight: 600;
-    text-decoration: none;
-}
-.cta a{
-    background: linear-gradient(to top, var(--brand),#eab308);
-    padding: 8px 20px;
-    border-radius: 6px;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.toggle__buttons {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    display: none;
-}
-
-.nav__toggle {
-    display: none;
-}
-
-@media only screen and (max-width:800px) {
-
-    .nav__items {
-        gap: 2rem;
-    }
-
-}
-
-@media only screen and (max-width:1024px) {
-    .hide {
-        display: none !important;
-    }
-    .cta{
-        display: none;
-    }
-    .nav__items {
-        position: fixed;
-        flex-direction: column;
-        gap: 1rem;
-        height: 100%;
-        inset: 0 0 0 20%;
-        background-color: var(--darkest);
-        padding: min(20rem, 15vh) 2rem;
-        transform: translateX(100%);
-        transition: transform 500ms ease-in-out;
-    }
-    .active {
-        transform: translateX(0%);
-    }
-
-    .nav__toggle {
-        display: block;
-    }
-
-    #open__nav {
-        display: block;
-        margin-left: 1rem;
-        position: absolute;
-        z-index: 2000;
-        right: 1rem;
-        top: .1rem;
-
-    }
-
-    #close__nav {
-        display: block;
-        position: absolute;
-        z-index: 2000;
-        right: 1rem;
-        top: .1rem;
-
-
-    }
-}
-@media only screen and (max-width:600px){
-    .brand h1{
-        font-size: 1.8rem;
-    }
+.cta__button {
+  background-color: #fec340 !important;
 }
 </style>
