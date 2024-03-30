@@ -1,135 +1,159 @@
-<script>
-export default{
-    data(){
-        return{
-            subheading: "Web Developer",
-            heading: "Hi!👋I'm <span class='gradient__text'> Khawar Mehfooz</span>",
-            description: "I'm a Web developer based in  <span class='highlight__text'>Azad Kashmir, Pakistan.</span>",
-            img: "/images/khawar-mehfooz.webp"
-        }
-    }
-}
+<script setup>
+const description =
+  "Hey everyone, Khawar here! I'm a web developer working mainly with PHP and Wordpress. You can find my projects on any of the links below.";
+const socialLinks = {
+  github: "https://github.com/Khawarmehfooz",
+  twitter: "https://twitter.com/KhawarMehfooz",
+};
 </script>
 <template>
-    <main class="hero">
-        <div class="hero__left">
-            <h3 class="hero__left--subheading">{{ subheading }}</h3>
-            <h1 class="hero__left--heading" v-html="heading"></h1>
-            <p class="hero__left--description" v-html="description"></p>
-            <div class="hero__left--buttons">
-                <a class="work__btn" role="button" href="#projects">See my work</a>
-                <a class="cta__btn" role="button" href="mailto:khawarmehfooz@oulook.com">Get in touch</a>
-            </div>
+  <section class="flex mt-0 lg:mt-8 px-4 md:px-0">
+    <div class="relative z-10 w-full md:w-2/3 mt-4 lg:mt-16">
+      <h1
+        class="text-3xl lg:text-4xl lg:leading-relaxed font-semibold leading-snug text-gray-900"
+      >
+        Web developer with a love for
+        <span class="highlight laravel">Laravel</span>,
+        <span class="highlight vue">Vue</span>, and
+        <span class="highlight wordpress">WordPress</span>
+      </h1>
+      <p class="text-base mt-4 text-slate-700 leading-relaxed">
+        {{ description }}
+      </p>
+      <div class="flex items-center justify-start mt-8">
+        <a
+          v-for="(url, name, index) in socialLinks"
+          :key="index"
+          class="block mr-8 md:mr-12 fill-current text-gray-900 hover:text-slate-500 transform hover:-translate-y-1 transition-all duration-200"
+          :href="url"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            class="w-10 h-10"
+            :src="'/images/' + name + '.svg'"
+            :alt="name"
+            loading="lazy"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="hidden md:block relative ml-8 w-1/3">
+      <div>
+        <div class="absolute left-0 top-8">
+          <img
+            class="relative z-10 w-24 h-24 animate-soft alt-1"
+            src="/images/laravel.svg"
+            alt=""
+            loading="lazy"
+          />
+          <div
+            class="absolute -z-10 left-2 -bottom-12 w-16 h-16 rounded-full bg-slate-900 opacity-10 animate-soft-shadow"
+          ></div>
         </div>
-        <div class="hero__right">
-            <img :src="img" alt="">
+      </div>
+      <div>
+        <div class="absolute right-0 top-1/4">
+          <img
+            class="relative z-10 w-24 h-24 animate-soft alt-1"
+            src="/images/vuejs.png"
+            alt=""
+            loading="lazy"
+          />
+          <div
+            class="absolute -z-10 left-4 -bottom-10 w-16 h-16 rounded-full bg-slate-900 opacity-10 animate-soft-shadow alt-1"
+          ></div>
         </div>
-
-    </main>
+      </div>
+      <div>
+        <div class="absolute left-12 bottom-16">
+          <img
+            class="relative z-10 w-24 h-24 animate-soft alt-1"
+            src="/images/wordpress.png"
+            alt=""
+            loading="lazy"
+          />
+          <div
+            class="absolute -z-10 left-4 -bottom-8 w-16 h-16 rounded-full bg-slate-900 opacity-10 animate-soft-shadow alt-2"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 <style scoped>
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6rem 4rem;
-    gap: 1rem;
+.animate-soft {
+  animation-name: soft;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
-.hero__left--subheading{
-    color: var(--light-dark);
-    text-transform: uppercase;
-    margin-bottom: .5rem;
+.animate-soft-shadow {
+  animation-name: soft-shadow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
-.hero__left--heading{
-    font-size: 3rem;
-    color: var(--lightest);
-    line-height: 1.3;
+.animate-soft.alt-1 {
+  animation-duration: 4s;
 }
-
-.hero__left--description{
-    color: var(--mid);
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    text-wrap:balance;
+.animate-soft.alt-2 {
+  animation-duration: 6s;
 }
-.hero__left--buttons{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.animate-soft-shadow.alt-1 {
+  animation-duration: 4s;
 }
-.hero__left--buttons a{
-    padding: .5rem 1rem;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 22px;
+.animate-soft-shadow.alt-2 {
+  animation-duration: 6s;
 }
-.work__btn{
-    border: 1px solid var(--lightest);
-    font-family: 'sofia_promedium' !important;
-
+@keyframes soft {
+  0% {
+    transform: translateY(0.5rem) scale(0.95);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(0.5rem) scale(0.95);
+  }
 }
-.work__btn:hover{
-    background-color:var(--lightest);
-    color: var(--darkest);
+@keyframes soft-shadow {
+  0% {
+    transform: scaleY(0.5) scaleX(1);
+  }
+  50% {
+    transform: scaleY(0.35) scaleX(0.75);
+  }
+  to {
+    transform: scaleY(0.5) scaleX(1);
+  }
 }
-.cta__btn{
-    background-color: var(--brand);
-    border:2px solid transparent;
-    font-family: 'sofia_promedium' !important;
-    color: var(--darkest);
-
+.highlight {
+  position: relative;
+  display: inline-block;
 }
-.cta__btn:hover{
-    background: transparent;
-    border: 2px solid var(--brand);
-    color: var(--brand);
+.highlight:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.375rem;
+  z-index: -10;
+  display: block;
+  height: 0.5rem;
+  width: 100%;
 }
-
-.hero__right img{
-    width: 400px;
-    border-radius: 6px;
+@media (min-width: 768px) {
+  .highlight:after {
+    bottom: 0.75rem;
+  }
 }
-@media only screen and (max-width:975px){
-    .hero{
-        padding: 6rem 0rem;
-    }
-
+.highlight.laravel:after {
+  background: #ff3226;
 }
-@media only screen and (max-width:850px){
-    .hero__right{
-        display: none;
-    }
-    
+.highlight.vue:after {
+  background: #81c784;
 }
-@media only screen and (max-width:766px){
-    .hero{
-        padding:2rem 0;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .hero__left{
-        text-align: center;
-    }
-    .hero__right{
-        display: block;
-    }
-    .hero__right img{
-        width: 100%;
-    }
-    .hero__left--heading{
-        text-align: center;
-        font-size: 2.5rem;
-        
-    }
-    .hero__left--description{
-        font-size: 1.3rem !important;
-
-    }
-    .hero__left--buttons{
-        justify-content: center;
-    }
-    .hero__left--buttons a{
-        font-size: 18px;
-    }
+.highlight.wordpress:after {
+  background: #1b769c;
 }
 </style>

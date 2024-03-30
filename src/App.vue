@@ -12,11 +12,6 @@ import Footer from "./components/Footer.vue";
   <div class="max-w-4xl mx-auto pb-6 md:pb-12">
     <Navbar />
     <Hero />
-    <About />
-    <Skills />
-    <Projects />
-    <Testinomial />
-    <Footer />
   </div>
 </template>
 

@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-:root {
+root {
   --brand: #ca873a;
   --darkest: #262c30;
   --dark: #44514b;
@@ -26,8 +25,8 @@
 }
 /* Styling */
 html {
+  font-family: "Poppins", sans-serif !important;
   scroll-behavior: smooth;
-  /* scroll-padding-top: 4rem; */
 }
 
 /*
@@ -78,7 +77,6 @@ html,
   -o-tab-size: 4;
   tab-size: 4;
   /* 3 */
-  font-family: "Inter", sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -1018,11 +1016,6 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
-}
-
-html {
-  font-family: "Poppins" !important;
-  scroll-behavior: smooth;
 }
 
 .hover\:-translate-y-1:hover {
