@@ -7,7 +7,7 @@ const socialLinks = {
 };
 </script>
 <template>
-  <section class="flex mt-0 lg:mt-8 px-4 md:px-0">
+  <section class="flex mt-0 lg:mt-8 px-4 md:px-2">
     <div class="relative z-10 w-full md:w-2/3 mt-4 lg:mt-16">
       <h1
         class="text-3xl lg:text-4xl lg:leading-relaxed font-semibold leading-snug text-gray-900"

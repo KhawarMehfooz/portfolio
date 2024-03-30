@@ -1,188 +1,174 @@
-<script>
-export default{
-    data(){
-        return{
-            projects: [
-                {
-                    name: "Tip Calculator App",
-                    description: "A tip calculator app challenge by front-end mentor.",
-                    img: "/images/tip-calculator-app.png",
-                    liveLink: "https://tip-calculator-app-by-khawar.vercel.app/",
-                    githubLink: "https://github.com/Khawarmehfooz/Front-End-Mentor-Challenges/tree/main/tip-calculator-app",
-                    tags: [
-                        {
-                            id: 'html',
-                            name: 'html'
-                        },
-                        {
-                            id: 'css',
-                            name: 'css'
-                        }, {
-                            id: 'javascript',
-                            name: "javascript"
-                        }
-                    ]
-                }, {
-                    name: "Advice Generator App",
-                    description: "A advice generator app challenge by front-end mentor.",
-                    img: "/images/advice-generator-app.png",
-                    liveLink: "https://advice-generator-app-by-khawar.vercel.app/",
-                    githubLink: "https://github.com/Khawarmehfooz/advice-generator-app",
-                    tags: [
-                        {
-                            id: 'html',
-                            name: 'html'
-                        },
-                        {
-                            id: 'css',
-                            name: 'css'
-                        }, {
-                            id: 'javascript',
-                            name: "javascript"
-                        }
-                    ]
-                }, {
-                    name: "Age Calculator App",
-                    description: "An age calculator app challenge by front-end mentor.",
-                    img: "/images/age-calculator-app.png",
-                    liveLink: "https://age-calculator-app-by-khawar.vercel.app/",
-                    githubLink: "https://github.com/Khawarmehfooz/Front-End-Mentor-Challenges/tree/main/age-calculator-app",
-                    tags: [
-                        {
-                            id: 'html',
-                            name:'html'
-                        },
-                        {
-                            id: 'css',
-                            name: 'css'
-                        },{
-                            id: 'javascript',
-                            name: "javascript"
-                        }
-                    ]
-                }
-                , {
-                    name: "Blogging Web Application",
-                    description: "A Simple blogging Web application built using PHP.",
-                    img: "/images/blog.png",
-                    liveLink: "https://github.com/Khawarmehfooz/blog",
-                    githubLink: "https://github.com/Khawarmehfooz/blog",
-                    tags: [
-                        {
-                            id: 'html',
-                            name: 'html'
-                        },
-                        {
-                            id: 'css',
-                            name: 'css'
-                        }, {
-                            id: 'javascript',
-                            name: "javascript"
-                        }, {
-                            id: 'php',
-                            name: "php"
-                        }
-                    ]
-                }
-            ]
-        }
-    }
-}
+<script setup>
+const projects = [
+  {
+    name: "Blogging Web Application",
+    img: "/images/blog.png",
+    link: "https://github.com/khawarmehfooz/blogpedia",
+    downloadLink: "https://github.com/khawarmehfooz/blogpedia",
+    tags: [
+      {
+        id: "html",
+        name: "html",
+      },
+      {
+        id: "css",
+        name: "css",
+      },
+      {
+        id: "javascript",
+        name: "javascript",
+      },
+      {
+        id: "php",
+        name: "php",
+      },
+    ],
+  },
+  {
+    name: "Tip Calculator",
+    img: "/images/tip-calculator-app.png",
+    link: "https://tip-calculator-app-by-khawar.vercel.app/",
+    downloadLink:
+      "https://github.com/Khawarmehfooz/Front-End-Mentor-Challenges/tree/main/tip-calculator-app",
+    tags: [
+      {
+        id: "html",
+        name: "html",
+      },
+      {
+        id: "css",
+        name: "css",
+      },
+      {
+        id: "javascript",
+        name: "javascript",
+      },
+    ],
+  },
+  {
+    name: "Expense Tracker",
+    img: "/images/expense-tracker.png",
+    link: "https://expense-tracker-vue.vercel.app/",
+    downloadLink: "https://github.com/Khawarmehfooz/expense-tracker",
+    tags: [
+      {
+        id: "html",
+        name: "html",
+      },
+      {
+        id: "css",
+        name: "css",
+      },
+      {
+        id: "vue",
+        name: "vue.js",
+      },
+    ],
+  },
+];
 </script>
-<template>
-    <section class="container" id="projects">
-        <h2 class="article__heading">Projects</h2>
-        <ul class="projects__list">
-            <li v-for="project in projects">
-                <article class="project__card" >
-                    <a :href="project.liveLink">
-                        <img class="project__img" :src="project.img" alt="">
-                        <section class="project__details">
-                            <h5 class="project__name">{{ project.name }}</h5>
-                            <p class="project__description">{{ project.description }}</p>
-                            <div class="skills__tag"  >
-                                <span v-for="tag in project.tags" :id="tag.id" class="tag tag__html">#{{ tag.name }}</span>
-                            </div>
-                        </section>
-                    </a>
 
-                </article>
-            </li>
-        </ul>
-    </section>
+<template>
+  <section class="py-4 lg:py-16 my-4 lg:my-16 border-y-2 border-gray-800">
+    <div id="projects" class="px-4 md:px-2">
+      <h2
+        class="text-2xl lg:text-3xl lg:leading-relaxed font-semibold leading-snug text-gray-900"
+      >
+        Projects
+      </h2>
+      <div class="grid projects__grid mt-4">
+        <article
+          v-for="(project, index) in projects"
+          :key="index"
+          class="border rounded border-gray-800 h-fit"
+        >
+          <a :href="project.link">
+            <div class="relative border-b border-gray-800">
+              <div class="">
+                <img
+                  class="rounded-t w-[100%] bg-cover object-cover aspect-video"
+                  :src="project.img"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </a>
+          <header class="px-4 py-2 border-b border-gray-800">
+            <h3 class="text-xl">{{ project.name }}</h3>
+          </header>
+          <footer class="flex">
+            <div
+              class="w-[80%] flex items-center flex-wrap p-1 gap-1 md:p-2 md:gap-2 border-r border-gray-800"
+            >
+              <span
+                v-for="tag in project.tags"
+                :id="tag.id"
+                class="tag tag__html"
+                >#{{ tag.name }}</span
+              >
+            </div>
+            <div class="p-2 w-[20%]">
+              <a :href="project.downloadLink">
+                <img class="w-[70%] mx-auto" src="/images/github.svg" alt="" />
+              </a>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
 </template>
 <style scoped>
-.projects__list{
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 2rem 1rem;
+:root {
+  --html-clr: #e65100;
+  --css-clr: #0277bd;
+  --js-clr: #ffd600;
+  --vue-clr: #42b883;
+  --php-clr: #617cbe;
+  --mysql-clr: #00758f;
+  --git-clr: #f4511e;
+  --wp-clr: #1b769c;
 }
-
-.project__card{
-    width: 19.5rem;
-    background-color: var(--darkest);
-    border-radius: .5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.projects__grid {
+  --min-grid-absolute-size: 16rem;
+  --max-grid-relative-size: 50%;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(
+      max(
+        min(var(--min-grid-absolute-size), 100%),
+        var(--max-grid-relative-size) - 1rem
+      ),
+      1fr
+    )
+  );
+  gap: 1rem;
 }
-.project__img{
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    opacity: 0.8;
-    width: 100%;
-    aspect-ratio: 16/9;
+.tag {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem 0.375rem;
+  border-radius: 0.375rem;
+  line-height: 1rem;
 }
-.project__details{
-    padding: 1.25rem;
+#html {
+  background-color: #e65100;
+  color: white;
 }
-.project__description{
-    font-size: 1rem;
-    color: var(--light-dark);
-    min-height: 100px;
-    margin: .75em 0;
+#css {
+  background-color: #0277bd;
+  color: white;
 }
-.skills__tag{
-    display: flex;
-    gap: .5rem;
+#javascript {
+  background-color: #ffd600;
 }
-.tag{
-    font-family: 'sofia_promedium';
-    font-size: .9rem;
-    padding: .25rem .5rem .375rem;
-    border-radius: .375rem;
-    line-height: 1rem;
+#php {
+  background-color: #617cbe;
+  color: white;
 }
-#html{
-    background-color: var(--html-clr);
+#vue {
+  background-color: #42b883;
 }
-#css{
-    background-color: var(--css-clr);
-}
-#javascript{
-    background-color: var(--js-clr);
-    color: var(--darkest);
-}
-#php{
-    background-color: var(--php-clr);
-}
-@media only screen and (max-width:1024px){
-    .projects__list{
-        grid-template-columns: repeat(2,1fr);
-        gap: 2rem;
-
-    }
-}
-@media  only screen and (max-width:768px) {
-    .projects__list{
-        grid-template-columns: repeat(1,1fr);
-        place-items: center;
-    }
-    
-}
-@media only screen and (max-width:600px){
-    .projects__list{
-        justify-content: center;
-    }
-}
-
 </style>
