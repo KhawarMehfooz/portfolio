@@ -95,7 +95,7 @@ const projects = [
             </div>
           </a>
           <header class="px-4 py-2 border-b border-gray-800">
-            <h3 class="text-xl">{{ project.name }}</h3>
+            <h3 class="text-xl font-medium">{{ project.name }}</h3>
           </header>
           <footer class="flex">
             <div

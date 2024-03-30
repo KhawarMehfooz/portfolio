@@ -1,7 +1,10 @@
 # Portfolio Website
 
-## Tech Stack
+## Built With
 
-- Html
-- Css
-- Vue
+- HTML
+- CSS
+- Vue.js
+
+## Preview
+![Screenshot of portfolio](./public/images/screenshot.png)

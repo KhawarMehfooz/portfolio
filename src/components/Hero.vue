@@ -1,6 +1,6 @@
 <script setup>
 const description =
-  "Hey everyone, Khawar here! I'm a web developer working mainly with PHP and Wordpress. You can find my projects on any of the links below.";
+  "Hey everyone, Khawar here! I'm web developer passionate about Laravel, Vue.js, and WordPress. I specialize in creating dynamic websites and web applications using PHP and WordPress. Explore my projects below!";
 const socialLinks = {
   github: "https://github.com/Khawarmehfooz",
   twitter: "https://twitter.com/KhawarMehfooz",

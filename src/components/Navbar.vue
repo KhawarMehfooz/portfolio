@@ -12,7 +12,7 @@ const navigation = [
   },
   {
     name: "Contact",
-    link: "mailto:bilawalmehfooz@outlook.com",
+    link: "mailto:khawarmehfooz@outlook.com",
     icon: "/images/envelope.png",
     cta: true,
   },
