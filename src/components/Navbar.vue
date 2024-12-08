@@ -17,7 +17,7 @@ const navigation = [
     cta: true,
   },
 ];
-const logoImageUrl = "/images/khawar-mehfooz.webp";
+const logoImageUrl = "/images/khawar-mehfooz.jpg";
 </script>
 <template>
   <header class="border-b-2 border-gray-800">
