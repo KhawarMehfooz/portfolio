@@ -1,10 +1,11 @@
 <script setup>
 const projects = [
   {
-    name: "Blogging Web Application",
-    img: "/images/blog.png",
-    link: "https://github.com/khawarmehfooz/blogpedia",
-    downloadLink: "https://github.com/khawarmehfooz/blogpedia",
+    name: "Virtual Outcomes - Templates For Post Types",
+    img: "/images/projects/virtual-outcomes-thumbnail.webp",
+    link: "https://virtualoutcomes.co.uk/pharmacy-training/",
+    refercenceLink: "https://www.fiverr.com/users/beingkhawar/portfolio/NjZiYWMwMTBlMTJjNzMwMDAxYmE2OWFl",
+    referenceLogo: "/images/Fiverr-Logo.png",
     tags: [
       {
         id: "html",
@@ -25,11 +26,11 @@ const projects = [
     ],
   },
   {
-    name: "Tip Calculator",
-    img: "/images/tip-calculator-app.png",
-    link: "https://tip-calculator-app-by-khawar.vercel.app/",
-    downloadLink:
-      "https://github.com/Khawarmehfooz/Front-End-Mentor-Challenges/tree/main/tip-calculator-app",
+    name: "VO Data - Edit or Remove Posts From Taxonomy - WordPress",
+    img: "/images/projects/vo-data-preview.webp",
+    link: "https://www.fiverr.com/users/beingkhawar/portfolio/NjZlYTJmNDI0M2ViYzYwMDAxYTc0ZGU0",
+    refercenceLink: "https://www.fiverr.com/users/beingkhawar/portfolio/NjZlYTJmNDI0M2ViYzYwMDAxYTc0ZGU0",
+    referenceLogo: "/images/Fiverr-Logo.png",
     tags: [
       {
         id: "html",
@@ -42,16 +43,21 @@ const projects = [
       {
         id: "javascript",
         name: "javascript",
+      },{
+        id: "php",
+        name: "php",
       },
     ],
   },
   {
-    name: "Expense Tracker",
-    img: "/images/expense-tracker.png",
-    link: "https://expense-tracker-vue.vercel.app/",
+    name: "Jutimmo API Integration into WordPress",
+    img: "/images/projects/justimmo-preview.png",
+    link: "https://www.fiverr.com/users/beingkhawar/portfolio/Njc0ZDFlYzJiMTU5MTQwMDAxMjI0MWZk",
     downloadLink: "https://github.com/Khawarmehfooz/expense-tracker",
+    refercenceLink: "https://www.fiverr.com/users/beingkhawar/portfolio/Njc0ZDFlYzJiMTU5MTQwMDAxMjI0MWZk",
+    referenceLogo: "/images/Fiverr-Logo.png",
     tags: [
-      {
+    {
         id: "html",
         name: "html",
       },
@@ -60,8 +66,11 @@ const projects = [
         name: "css",
       },
       {
-        id: "vue",
-        name: "vue.js",
+        id: "javascript",
+        name: "javascript",
+      },{
+        id: "php",
+        name: "php",
       },
     ],
   },
@@ -104,13 +113,13 @@ const projects = [
               <span
                 v-for="tag in project.tags"
                 :id="tag.id"
-                class="tag tag__html"
+                class="tag tag__html uppercase font-semibold text-sm"
                 >#{{ tag.name }}</span
               >
             </div>
             <div class="p-2 w-[20%]">
-              <a :href="project.downloadLink">
-                <img class="w-[70%] mx-auto" src="/images/github.svg" alt="" />
+              <a :href="project?.refercenceLink">
+                <img class="w-[70%] mx-auto" :src="project?.referenceLogo" alt="" />
               </a>
             </div>
           </footer>

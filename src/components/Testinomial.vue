@@ -22,7 +22,7 @@
                   Jason Norman.
                 </h6>
                 <div class="flex items-center gap-2">
-                  <img class="w-5" src="/images/uk.png" alt="" />
+                  <img class="w-5" src="/images/country-flag-icons/uk.png" alt="" />
                   <span class="text-sm text-zinc-500">United Kingdom</span>
                 </div>
               </div>
@@ -57,7 +57,7 @@
                   Saurab.
                 </h6>
                 <div class="flex items-center gap-2">
-                  <img class="w-5" src="/images/australia.png" alt="" />
+                  <img class="w-5" src="/images/country-flag-icons/australia.png" alt="" />
                   <span class="text-sm text-zinc-500">Australia</span>
                 </div>
               </div>
@@ -92,7 +92,7 @@
                   Joseph
                 </h6>
                 <div class="flex items-center gap-2">
-                  <img class="w-5" src="/images/philippines.png" alt="" />
+                  <img class="w-5" src="/images/country-flag-icons/philippines.png" alt="" />
                   <span class="text-sm text-zinc-500">Philippines</span>
                 </div>
               </div>
@@ -125,7 +125,7 @@
                   Anders Sundström
                 </h6>
                 <div class="flex items-center gap-2">
-                  <img class="w-5" src="/images/swedan.png" alt="" />
+                  <img class="w-5" src="/images/country-flag-icons/swedan.png" alt="" />
                   <span class="text-sm text-zinc-500">Swedan</span>
                 </div>
               </div>
@@ -161,7 +161,7 @@
                   Mark Bedella.
                 </h6>
                 <div class="flex items-center gap-2">
-                  <img class="w-5" src="/images/us.png" alt="" />
+                  <img class="w-5" src="/images/country-flag-icons/us.png" alt="" />
                   <span class="text-sm text-zinc-500">United States</span>
                 </div>
               </div>
@@ -195,7 +195,7 @@
               <div class="flex-grow pl-3">
                 <h6 class="font-bold text-sm uppercase text-gray-600">Yohan</h6>
                 <div class="flex items-center gap-2">
-                  <img class="w-5" src="/images/switzerland.png" alt="" />
+                  <img class="w-5" src="/images/country-flag-icons/switzerland.png" alt="" />
                   <span class="text-sm text-zinc-500">Switzerland</span>
                 </div>
               </div>

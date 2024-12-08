@@ -3,7 +3,7 @@ const description =
   "Hey everyone, Khawar here! I'm web developer passionate about Laravel, Vue.js, and WordPress. I specialize in creating dynamic websites and web applications using PHP and WordPress. Explore my projects below!";
 const socialLinks = {
   github: "https://github.com/Khawarmehfooz",
-  twitter: "https://twitter.com/KhawarMehfooz",
+  fiverr: "https://fiverr.com/beingkhawar"
 };
 </script>
 <template>
@@ -24,14 +24,14 @@ const socialLinks = {
         <a
           v-for="(url, name, index) in socialLinks"
           :key="index"
-          class="block mr-8 md:mr-12 fill-current text-gray-900 hover:text-slate-500 transform hover:-translate-y-1 transition-all duration-200"
+          class="block mr-8 md:mr-6 fill-current text-gray-900 hover:text-slate-500 transform hover:-translate-y-1 transition-all duration-200"
           :href="url"
           target="_blank"
           rel="noreferrer"
         >
           <img
-            class="w-10 h-10"
-            :src="'/images/' + name + '.svg'"
+            class="w-10 h-10 object-cover"
+            :src="'/images/icons/' + name + '.svg'"
             :alt="name"
             loading="lazy"
           />
@@ -43,7 +43,7 @@ const socialLinks = {
         <div class="absolute left-0 top-8">
           <img
             class="relative z-10 w-24 h-24 animate-soft alt-1"
-            src="/images/laravel.svg"
+            src="/images/icons/laravel.svg"
             alt=""
             loading="lazy"
           />
@@ -56,7 +56,7 @@ const socialLinks = {
         <div class="absolute right-0 top-1/4">
           <img
             class="relative z-10 w-24 h-24 animate-soft alt-1"
-            src="/images/vuejs.png"
+            src="/images/icons/vuejs.png"
             alt=""
             loading="lazy"
           />
@@ -69,7 +69,7 @@ const socialLinks = {
         <div class="absolute left-12 bottom-16">
           <img
             class="relative z-10 w-24 h-24 animate-soft alt-1"
-            src="/images/wordpress.png"
+            src="/images/icons/wordpress.png"
             alt=""
             loading="lazy"
           />

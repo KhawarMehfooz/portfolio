@@ -3,17 +3,17 @@ const navigation = [
   {
     name: "Projects",
     link: "#projects",
-    icon: "/images/code.png",
+    icon: "/images/icons/code.png",
   },
   {
     name: "Testimonials",
     link: "#testimonials",
-    icon: "/images/testimonial.png",
+    icon: "/images/icons/testimonial.png",
   },
   {
     name: "Contact",
     link: "mailto:khawarmehfooz@outlook.com",
-    icon: "/images/envelope.png",
+    icon: "/images/icons/envelope.png",
     cta: true,
   },
 ];
