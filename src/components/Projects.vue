@@ -50,7 +50,7 @@ const projects = [
     ],
   },
   {
-    name: "Jutimmo API Integration into WordPress",
+    name: "Justimmo API Integration into WordPress",
     img: "/images/projects/justimmo-preview.png",
     link: "https://www.fiverr.com/users/beingkhawar/portfolio/Njc0ZDFlYzJiMTU5MTQwMDAxMjI0MWZk",
     downloadLink: "https://github.com/Khawarmehfooz/expense-tracker",
